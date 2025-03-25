@@ -30,5 +30,3 @@ VALUES
 INSERT INTO students (student_id, student_name, gender, dob) 
 VALUES 
 (8, 'Divya_patil', 'F', TO_DATE('2002-06-18', 'YYYY-MM-DD'));
-
-
