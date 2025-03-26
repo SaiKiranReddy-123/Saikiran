@@ -44,7 +44,6 @@ ROLLBACK;
 ALTER TABLE XXNYB_CONSTRAINTS_TEST
 DROP constraint SYS_C008486;
 
-
 --PRIMARY KEY
 --Create Primary Key constraint on SNO column: XXNYB_CONSTRAINTS_TEST
 
@@ -82,7 +81,6 @@ insert into xxnyb_employees_test values (1001, 'Vamsi', sysdate -280, 10);
 insert into xxnyb_employees_test values (1002, 'Vamsi', sysdate -268, 20);
 
 commit;
-
 
 insert into xxnyb_employees_test values (1001, 'Vamsi', sysdate -268, 20);
 
