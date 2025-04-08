@@ -1,0 +1,127 @@
+--Number functions
+ 
+select max(salary) from hr.employees;
+select min(salary) from hr.employees
+
+SELECT
+    POWER(25, 2) AS POWER
+FROM
+    DUAL;
+
+
+SELECT
+    SQRT(25) AS SQUARE_ROOT
+FROM
+    DUAL;
+
+SELECT
+    MOD(24, 2) AS MODULUS
+FROM
+    DUAL;
+SELECT
+    MOD(25, 2) AS MODULUS
+FROM
+    DUAL;
+
+SELECT
+    CEIL(98.2) AS CEIL
+FROM
+    DUAL;
+
+SELECT
+    FLOOR(98.2) AS FLOOR
+FROM
+    DUAL;
+
+SELECT
+    ROUND(98.2) AS ROUND
+FROM
+    DUAL;
+
+SELECT
+    ROUND(98.6) AS ROUND
+FROM
+    DUAL;
+
+SELECT
+    ROUND(98.5) AS ROUND
+FROM
+    DUAL;
+
+SELECT
+    ROUND(98.4) AS ROUND
+FROM
+    DUAL;
+
+SELECT
+    TRUNC(98 . 6) AS TRUNC
+FROM
+    DUAL;
+
+SELECT
+    TRUNC(98.2) AS TRUNC
+FROM
+    DUAL;
+
+SELECT
+    ROUND(123.5678, 2) AS ROUND
+FROM
+    DUAL;
+
+SELECT
+    TRUNC(98.67543, 2) AS TRUNC,
+    ROUND(98.67543, 2) AS ROUND
+FROM
+    DUAL;
+
+SELECT
+    MOD(15, 4) AS MODULUS
+FROM
+    DUAL;
+
+SELECT
+    CEIL(4.2)  AS CEIL,
+    FLOOR(4.2) AS FLOOR
+FROM
+    DUAL;
+
+SELECT
+    SIGN(-32),
+    SIGN(32),
+    SIGN(0)
+FROM
+    DUAL;
+
+SELECT
+    ABS(8.6),
+    ABS(-8.6)
+FROM
+    DUAL;
+
+SELECT
+    POWER(2, 5) AS POWER
+FROM
+    DUAL;
+
+SELECT
+    SQRT(64) AS SQUARE_ROOT
+FROM
+    DUAL;
+
+SELECT
+    ROUND(1234.567, -2) AS ROUND
+FROM
+    DUAL;
+/*round(number,-n)
+rounds to n digits left from decimal point*/
+SELECT
+    TRUNC(987.614, -2) AS TRUNC
+FROM
+    DUAL;
+
+SELECT
+    ROUND(99.99, -1) AS ROUND,
+    TRUNC(99.99, -1) AS TRUNC
+FROM
+    DUAL;
+ 

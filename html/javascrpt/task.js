@@ -34,7 +34,7 @@
 //     highest=c
 //  }
 //  if (d > highest){
-//     highest=d
+//     highest=d 
 //  }
 
 //  console.log("the highest number is :" + highest)
@@ -49,5 +49,19 @@
 // let highest = Math.max(num1, num2, num3, num4);
 
 // console.log("The highest number is: " + highest);
+
+
+// function calling(name) {
+//     console.log("Hello, " + name + "!");
+// }
+
+// calling('Sai')
+
+// calling("kiran")
+
+
+
+
+
 
 
