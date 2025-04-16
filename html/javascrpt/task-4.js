@@ -18,7 +18,7 @@ const factorialExpr = function(n) {
      return n * factorialExpr(n - 1);
    };
 
-   console.log(factorialExpr(5));
+console.log(factorialExpr(5));
 
 
 
@@ -63,6 +63,7 @@ function factorial(n) {
 
    console.log(isprime(19));
 
+// factorial calculator 
 
    function factorial(n) {
      if (n < 0) 
