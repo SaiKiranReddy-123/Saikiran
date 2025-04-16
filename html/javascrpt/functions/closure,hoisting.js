@@ -74,12 +74,12 @@
 
 // console.log(k)
 
-function A(a,b){
-    console.log(a+b)
-    return a+b
-}
+// function A(a,b){
+//     console.log(a+b)
+//     return a+b
+// }
 
-var k = A(1,2)
-console.log(k)
+// var k = A(1,2)
+// console.log(k)
 
-console.log(A())
+// console.log(A())
