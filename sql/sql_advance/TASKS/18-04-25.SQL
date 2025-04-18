@@ -88,9 +88,15 @@ FROM STUDENTS
 WHERE DOB > TO_DATE('31-12-2000', 'DD-MM-YYYY');
 
 
-SELECT DEPARTMENT_ID, count(*) as total_STUDENTS
-from STUDENTS
-group by DEPARTMENT_ID;
+SELECT
+    department_name,
+    COUNT(student_id)
+FROM
+         departments d
+    JOIN students s 
+    ON d.department_id = s.department_id
+GROUP BY
+    department_name;
 
 
 select * from STUDENTS
