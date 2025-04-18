@@ -79,3 +79,23 @@ console.log(hello(5))
  }
 
 console.log(hello(5))
+
+
+//pure function
+
+
+function add (a,b){
+
+    console.log(a+b)
+}
+
+add(1,2)
+
+//impure function
+
+function multiply(a){
+
+    console.log((Math.random())*a)
+}
+
+multiply(3)
