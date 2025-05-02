@@ -1,11 +1,11 @@
 
-// var person = {
-//     Name:'saikiran',
-//     age:24,
-//     city:'atp'
-// }
+ var person = {
+    Name:'saikiran',
+    age:24,
+     city:'atp'
+ }
 
-// var details=['sai',24,'atp']
+//var details=['sai',24,'atp']
 
 
 // console.log(person)
@@ -14,10 +14,10 @@
 
 // //for in
 
-// for (var x in person){
-//     console.log(x) // x is called a dynamic key
-//     console.log(person[x])
-// }
+ for (var x in person){
+    //console.log(x) // x is called a dynamic key
+    console.log(person[x])
+ }
 
 
 // //for of
