@@ -112,7 +112,44 @@ var as  = [... new Set(s)] // by using spread operator
 
 console.log(as)
 
+//includes
+
+// var newarr = []
+
+// for (i of s){
+
+//     if(newarr.includes(i)){
+//         continue
+//     }
+//     else{
+//         newarr.push(i)
+//     }
+// }
 
 
+// using function 
+
+function hello(s){
+    var newarr = []
+
+    for (i of s){
+        if(  newarr.includes(i)){
+            newarr.push(s)
+        }
+
+    } 
+    return newarr     
+}
+
+console.log(hello(s))
+
+
+//faltning of array
+
+var b = [1,2,3,'sai','hi',[10,20,30,[11,12,[90,32]],[50],[30,80,[40,34],[56,67,78]]]]  //--> this is to finding deapth
+
+console.log(b.flat(Infinity))
+
+console.log(b.flat(3))
 
 
