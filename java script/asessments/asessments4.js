@@ -83,19 +83,19 @@ console.log(getArrayLength(arr))
 
 // 10
 
-// var s = new set ()
+ var s = new Set ()
 
-// s.sdd(11)
+ s.add(11)
 
-// s.sdd(12)
+ s.add(12)
 
-// s.sdd(13)
+s.add(13)
 
-// s.sdd(12)
+ s.add(12)
 
-// s.sdd(11)
+ s.add(11)
 
-// console.log(s)
+ console.log(s)
 
 // // 9 
 
