@@ -30,7 +30,7 @@ console.log(M)
 
 //weakmap
 
-let obj = { name: "kavya" }
+let obj = { name: "sk reddy" }
 
 let wm = new WeakMap()
 
