@@ -89,5 +89,39 @@ div1.appendChild(h1)
 // removechild
 
  var delchild = div2.firstElementChild
+
  console.log(delchild)
+
  div2.removeChild(delchild)
+
+ //event handlers
+
+ //onclick :
+ 
+ //div2.addEventListener(handlers,eventToBeAdded)
+
+//  div2.addEventListener('click',
+function clickevent (){
+    alert("this is a alert messege")
+ }
+ 
+ div2.addEventListener('click',clickevent);
+ 
+ var btn = document.getElementById('click')
+
+ function btnclick(){
+    alert('button clicked')
+ }
+
+ btn.addEventListener('click',btnclick)
+
+ //capturing and bubling
+
+//  vardiv = document.getElementById('outer')
+// vardiv = document.getElementById('outer')
+
+//div.addEventListener('click' function () {
+
+//     alert('div clicked')
+//  },true)
+
