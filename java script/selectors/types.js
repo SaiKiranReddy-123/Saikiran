@@ -26,3 +26,6 @@ var a = document.getElementById('heading')
 console.log(a)
 a.style.backgroundColor = 'blue'
 
+
+
+

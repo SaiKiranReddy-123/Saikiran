@@ -137,3 +137,25 @@ WHERE r.room_id NOT IN (
         b.checkout_date > TO_DATE('14-07-2025', 'DD-MM-YYYY')
 );
 
+
+
+--List the names of customers along with the room types they have booked.
+
+select c.NAME,r.type
+from BOOKINGS b
+join CUSTOMERS1 c on b.CUSTOMER_ID = c.CUSTOMER_ID
+join ROOMS r on b.room_id = r.room_id;
+
+--Find all available rooms (status = 'availble') that are not booked during October 2025.
+
+select * from ROOMS R
+where R.status = 'availble'
+and R.ROOM_ID NOT IN(
+    SELECT ROOM_ID FROM BOOKINGS 
+    WHERE CHECKIN_DATE <= TO_DATE('31-10-2025','DD-MM-YYYY')
+    
+    AND CHECKOUT_DATE >= TO_DATE('01-10-2025','DD-MM-YYYY')
+);
+
+--List all customers who have booked an 'AC' room.
+

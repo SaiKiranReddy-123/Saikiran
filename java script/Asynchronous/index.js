@@ -118,49 +118,157 @@ First()
 
 //post
 
-var user = {
-    name : 'sai',
-    location: 'atp',
-    job :'it'
-}
+// var user = {
+//     name : 'sai',
+//     location: 'atp',
+//     job :'it'
+// }
   
-fetch('https://jsonplaceholder.typicode.com/posts',{
+// fetch('https://jsonplaceholder.typicode.com/posts',{
 
-    method : 'post',
-    body : JSON.stringify(user),
-    headers: {
-        'Content-type': 'application/json'
-    }
+//     method : 'post',
+//     body : JSON.stringify(user),
+//     headers: {
+//         'Content-type': 'application/json'
+//     }
 
- })
- .then(data => data.json())
+//  })
+//  .then(data => data.json())
 
- .then(data=>console.log(data))
+//  .then(data=>console.log(data))
 
-//put
+// //put
 
-var data = {
-    user_id :1,
-    id:1,
-    body : 'this is a body content',
-    title : 'this is a updated title'
-}
+// var data = {
+//     user_id :1,
+//     id:1,
+//     body : 'this is a body content',
+//     title : 'this is a updated title'
+// }
 
-fetch('https://jsonplaceholder.typicode.com/posts/2',{
-    method : 'put',
-    body :JSON.stringify(data),
-    headers:{ 
-        'Contenttype':'application/json'
+// fetch('https://jsonplaceholder.typicode.com/posts/2',{
+//     method : 'put',
+//     body :JSON.stringify(data),
+//     headers:{ 
+//         'Contenttype':'application/json'
         
-    }
+//     }
+// })
+
+// .then(res=>console.log(res))
+
+// .then(data => console.log(data))
+
+
+// var data1={
+//     title:'this is a new book'
+// }
+// fetch('https://jsonplaceholder.typicode.com/posts/1',{
+// method:'patch',
+// headers:{'content-type':'application/json'},
+// body:JSON.stringify(data1)
+// })
+// .then(res=>console.log(res))
+// .then(data=>console.log(data))
+// .catch(err=>console.log(err))
+
+
+//patch
+
+// fetch('https://jsonplaceholder.typicode.com/posts/1',{
+//     method:'patch',
+//     body:JSON.stringify(data),
+//     headers:{
+//        'Contenttype':'application/json' 
+//     }
+// })
+
+// .then(data=> console.log(data))
+
+//delete
+
+//  Delete
+ 
+fetch('https://jsonplaceholder.typicode.com/posts/1',{
+    method:"delete",
 })
-
 .then(res=>console.log(res))
-
-.then(data => console.log(data))
-
+.catch(error=>console.log(error))
 
 
+//promise
+
+//promise resolve and reject
+
+
+// const p1 = new Promise((resolve) => {
+//   setTimeout(() => resolve("P1 resolved"), 1000);
+// });
+
+// const p2 = new Promise((resolve) => {
+//   setTimeout(() => resolve("P2 resolved"), 500);
+// });
+
+// Promise.race([p1, p2]).then((value) => {
+//   console.log(value); 
+// });
+
+//promise race
+
+// Promise.race([
+//     new Promise((resolve,reject)=>{
+//         window.setTimeout(() =>{
+//             resolve(1)
+//         },1000)
+//     }),
+
+//     new Promise((resolve,reject)=>{
+//         window.setTimeout(()=>{
+//             reject(2)
+//         },200)
+//     })
+// ])
+
+// .then(data => console.log(data))
+
+// .catch(error => console.log(error))
 
 
 
+// //promise.any
+// Promise.any([
+//     new Promise((resolve,reject)=>{
+//         window.setTimeout(()=>{
+//             resolve(1)
+//         },1000)
+//     }),
+//     new Promise((resolve, reject) =>{
+//         window.setTimeout(()=>{
+//             reject(1)
+//         },200)
+//     })
+// ])
+
+// .then(data => console.log(data))
+
+// .catch(error => console.log(error))
+
+
+// //promise.allSettled
+
+// Promise.allSettled([
+//     new Promise((resolve,reject)=>{
+//         window.setTimeout(()=>{
+//             resolve(1)
+//         },1000)
+//     }),
+//     new Promise((resolve, reject) =>{
+//         window.setTimeout(()=>{
+//             reject(1)
+//         },200)
+//     })
+// ])
+
+// .then(data => console.log(data))
+
+// .catch(error => console.log(error))
