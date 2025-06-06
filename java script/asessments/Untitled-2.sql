@@ -99,3 +99,7 @@ end;
 
 desc employees;
 
+
+
+--scalar datat type
+-----------------
