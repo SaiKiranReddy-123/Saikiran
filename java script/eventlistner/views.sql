@@ -80,3 +80,4 @@ select * from (select d.department_id,d.department_name,e.first_name,e.employee_
                on e.department_id=d.department_id);
 
 select * from employees;
+
