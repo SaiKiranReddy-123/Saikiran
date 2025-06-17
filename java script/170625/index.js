@@ -15,18 +15,6 @@ for (let i = 1; i <= 5; i++) {
 
 console.log( factorial)
 //----------------------------------------
-let student = {
-    name: "Anu",
-    scores: {
-      math: 90,
-      english: 85,
-      science: 95
-    }
-  };
-  
-  for (let subject in student.scores) {
-    console.log(student.scores[subject])
-  }
 
   function isPalindrome(str) {
   let reversed = str.split('').reverse().join('');
@@ -146,3 +134,4 @@ function formatMassege(msg){
 var result = formatMassege("this is a js")
 
 console.log(result)
+
