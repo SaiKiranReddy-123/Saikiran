@@ -30,7 +30,7 @@ end;
 --simple case
 
 DECLARE
-lv_grade char(1);
+lv_grade char(1):= 'A';
 ln_bonus number;
 BEGIN
     if lv_grade = 'A' then 
@@ -44,6 +44,9 @@ BEGIN
     end if;
     dbms_output.put_line('Bonus :' || ln_bonus);
 END;
+
+
+
 
 
 
