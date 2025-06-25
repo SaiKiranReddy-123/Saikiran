@@ -51,3 +51,16 @@ BEGIN
     EXECUTE IMMEDIATE lv_query INTO lv_result USING 101;
     DBMS_OUTPUT.PUT_LINE('Result: ' || lv_result);
 END;
+
+
+DECLARE
+    lv_table  VARCHAR2(30) := 'employees';
+    lv_column VARCHAR2(30) := 'email';
+    lv_sql    VARCHAR2(1000);
+    lv_result VARCHAR2(100);
+BEGIN
+    lv_sql := 'SELECT ' || lv_column || ' INTO :1 FROM ' || lv_table || ' WHERE employee_id = :2';
+    EXECUTE IMMEDIATE lv_sql INTO lv_result USING 101;
+
+    DBMS_OUTPUT.PUT_LINE('Email: ' || lv_result);
+END;

@@ -11,30 +11,30 @@
 
 
 
-// let obj = {
-//   name : 'kiran',
-//   age : 24,
-//   adress : 'hyd'
-// }
+let obj = {
+  name : 'kiran',
+  age : 24,
+  adress : 'hyd'
+}
 
-// console.log(obj)
+console.log(obj)
 
-// obj.email = 'kiran@gmail.com'
+obj.email = 'kiran@gmail.com'
 
-// console.log(obj)
+console.log(obj)
 
-// delete obj.adress
+delete obj.adress
 
-// console.log(obj)
+console.log(obj)
 
-// obj.age = 25
+obj.age = 25
 
-// // console.log(obj)
+console.log(obj)
 
-// // for (let k in obj){
+for (let k in obj){
 
-// //   console.log(obj(k))
-// // }
+  console.log(obj(k))
+}
 
 
 
