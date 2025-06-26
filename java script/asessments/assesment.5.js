@@ -1,13 +1,13 @@
-// function logUserDetails(...users) {
-//   for (let user of users) {
-//     console.log(`User: ${user.name}, Age: ${user.age}`)
-//   }
-// }
+function logUserDetails(...users) {
+  for (let user of users) {
+    console.log(`User: ${user.name}, Age: ${user.age}`)
+  }
+}
 
 
-// logUserDetails(
-//   { name: "John Doe", age: 25 }
-// )
+logUserDetails(
+  { name: "John Doe", age: 25 }
+)
 
 
 
@@ -39,15 +39,15 @@ for (let k in obj){
 
 
 
-// // function multiply(a,b,c) {
+function multiply(a,b,c) {
 
-// //       return a * b * c{
-    
-// //   }
-// // }
+      return a * b * c{
+      
+  }
+}
 
 
-// // console.log(multiply(1)(2)(3))
+console.log(multiply(1)(2)(3))
 
 
 // function factorial(n) {
