@@ -4,7 +4,7 @@ DECLARE
 emp_id NUMBER:= 100;
 emp_name VARCHAR2(100);
 hire_date DATE :=SYSDATE;
-is_active BOOLEAN := FALSE;
+is_active BOOLEAN := TRUE;
 BEGIN
     emp_name := 'sai';
     if is_active THEN
